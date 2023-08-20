@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Contact page for getting in touch" />
+    <meta name="author" content="Olivia Cindyani Kusuma" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>OCK's Photography</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <article id="article-contact">
+      <main>
+        <h1>Contact Us</h1>
+        <p>
+          We look forward to connecting with you through the provided form to
+          discuss your photography inquiries and preferences.
+        </p>
+        <form method="POST" action="http://localhost:3000/contact">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </main>
+    </article>
+    <footer>&copy; 2023 OCK's Photography</footer>
+  </body>
+</html>
